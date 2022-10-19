@@ -48,11 +48,11 @@ def scrape_tweet(word):
     db.to_csv(filename)
 
 if __name__ == '__main__':
-    bearer_token = 'AAAAAAAAAAAAAAAAAAAAADxs%2FwAAAAAAIs3jej3TCI0PhuGbMXrnnyJVwoE%3DOGWO0y8ga9qthK7tnzGkQ3oFE6aGBEBaQzVmXJA3xNmn7CpzzF'
-    access_token = '838056936423698433-frZyLOgBOYIRVATcERyPzZX3BZYx98o'
-    access_token_secret = '7Hp2r4r6kIEdfDJLxoCMffGojHNZrdBybSPYcfH8asuog'
-    api_key = 'ikB4Diw0MZQHTNmLsQOu60DGj'
-    api_key_secret = 'LxFnbcL1e99rD3MuarP34hDRQdh2aHBNH0J9M2AOfXiGW3Yy1M'
+    bearer_token = env.BToken
+    access_token = env.AToken
+    access_token_secret = env.ATokenS
+    api_key = env.APIKey
+    api_key_secret = env.APIKeyS
 
     top_crypto = ['Bitcoin', 'Ethereum', 'XRP', 'Tether',
                 'Dogecoin']
